@@ -76,7 +76,7 @@ On other Linux based distros install python3.9 from your package manager.
 - [ ] Add items to lists
 	- Select the list you want to add the item to by clicking on it
   - Enter the item you want to add into the input box indicated by `Add a new item` and click `Add`
-		- You may need to refresh the list/page to see your changes
+    - You may need to refresh the list/page to see your changes
     - The program will save the list and its items so all lists will be intact when the program is restarted
 - [ ] Delete items 
   - Select the list that the item is in
