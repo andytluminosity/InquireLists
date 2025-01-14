@@ -80,7 +80,7 @@ On other Linux based distros install python3.9 from your package manager.
     - The program will save the list and its items so all lists will be intact when the program is restarted
 - [ ] Delete items 
   - Select the list that the item is in
-  - Click the X next to the list you want to delete
+  - Click the X next to the item you want to delete
 - [ ] Make an inquire about a list and its contents
   - ### Note: You must have entered and saved a valid OpenAI API Key with sufficient credits to perform this action
   - Select the list you want to make an inquiry on
