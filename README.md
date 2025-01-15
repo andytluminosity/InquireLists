@@ -11,7 +11,8 @@ their created lists
 - Ask and receive answers to inquiries about a certain list and its items
 
 ## Installation
-
+- [ ] Install npm
+	Follow the instructions in this [doc](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install npm https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 - [ ] Install Python 3.9
 	
   On Windows visit `https://www.python.org/downloads/windows/`
@@ -59,7 +60,7 @@ On other Linux based distros install python3.9 from your package manager.
 - [ ] Start the frontend and open the webpage
   - Open up your command terminal and change directory to the folder containing the source code `cd PATH_TO_INQUIRELISTS`
     - Eg. `cd C:\Users\YOUR_USERNAME\Downloads\InquireLists`
-  - Install `npm` if you have not already (TO DO: Add instructions to install npm)
+  - Run `npm install` if you have not already
   - Run `npm run dev`
   - Open [http://localhost:3000](http://localhost:3000) with your browser to see the webpage.
 
