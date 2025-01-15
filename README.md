@@ -86,7 +86,7 @@ On other Linux based distros install python3.9 from your package manager.
   - Select the list that the item is in
   - Click the X next to the item you want to delete
 - [ ] Make an inquire about a list and its contents
-  - ### Note: You must have entered and saved a valid OpenAI API Key with sufficient credits to perform this action
+  - #### Note: You must have entered and saved a valid OpenAI API Key with sufficient credits to perform this action
   - Select the list you want to make an inquiry on
   - Enter in your inquiry into the input box indicated by `Prompt to use with selected list items` and click `Generate`
     - It may take a bit to receive an answer depending on the inquiry and size of the selected list
