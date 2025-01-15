@@ -14,6 +14,7 @@ their created lists
 - [ ] Install npm
       
 	Follow the instructions in the following doc to install npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+
 - [ ] Install Python 3.9
 	
   On Windows visit `https://www.python.org/downloads/windows/`
@@ -47,7 +48,7 @@ their created lists
   	  
 On other Linux based distros install python3.9 from your package manager.
 
-- [ ]  Download and extract the `InquireLists` zip folder from the latest release notes
+- [ ]  Download and extract the `InquireLists.zip` folder from the latest release notes
 	- [Latest release notes](https://github.com/andytluminosity/InquireLists/releases/tag/v1.0-alpha)
  
 - [ ] Install Dependencies
