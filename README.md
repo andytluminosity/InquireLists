@@ -66,7 +66,7 @@ On other Linux based distros install python3.9 from your package manager.
   - Run `npm run dev`
   - Open [http://localhost:3000](http://localhost:3000) with your browser to see the webpage.
 
-### Note: Ensure that the backend server is running before performing any of these actions
+# Note: Ensure that the backend server is running before performing any of these actions
  - [ ] Input your OpenAI API Key
 	- Enter your OpenAI API Key into the input box indicated by `OpenAI API Key` and click save
  	- The program will save this API Key so you will only have to input it once
