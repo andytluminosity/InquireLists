@@ -12,7 +12,7 @@ their created lists
 
 ## Installation
 - [ ] Install npm
-	Follow the instructions in this [doc](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install npm https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+	Follow the instructions in the following doc to install npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 - [ ] Install Python 3.9
 	
   On Windows visit `https://www.python.org/downloads/windows/`
