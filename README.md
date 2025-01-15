@@ -47,7 +47,7 @@ their created lists
   	  
 On other Linux based distros install python3.9 from your package manager.
 
-- [ ]  Download the source code folder from the latest release notes
+- [ ]  Download and extract the `InquireLists` zip folder from the latest release notes
 	- [Latest release notes](https://github.com/andytluminosity/InquireLists/releases/tag/v1.0-alpha)
  
 - [ ] Install Dependencies
