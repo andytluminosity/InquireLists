@@ -50,6 +50,7 @@ On other Linux based distros install python3.9 from your package manager.
  
 - [ ] Install Dependencies
 	- `python3.9 -m pip install flask flask_cors` / `python -m pip install flask flask_cors` / `py -m pip install flask flask_cors`
+ 	- `npm install react-markdown`
    
 ## Usage
 
