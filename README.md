@@ -12,6 +12,7 @@ their created lists
 
 ## Installation
 - [ ] Install npm
+      
 	Follow the instructions in the following doc to install npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 - [ ] Install Python 3.9
 	
