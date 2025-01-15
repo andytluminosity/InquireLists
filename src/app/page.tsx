@@ -1,6 +1,7 @@
 "use client"; 
 
 import React, { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 import { getAllLists, storeItem, getAllItemsForList, deleteItem, deleteList } from './items_db';
 import { generatePrompt, changeAPIKey } from './ai_implementation';
 
@@ -155,13 +156,18 @@ const Page = () => {
           borderRadius: '10px',
           background: '#32a8a8',
         }}>
-          <label htmlFor="text-input"><strong>OpenAI API Key</strong></label>
+          <label 
+            htmlFor="text-input" 
+            style={{width:'40vw'}}>
+            <strong>OpenAI API Key</strong>
+          </label>
           <input
             type="text"
             id="text-input"
             value={newAPIKey}  // The value is controlled by state
             onChange={handleNewAPIKeyRequest}  // Updates state on change
             placeholder="Enter your OpenAI API Key"
+            style={{width:'40vw'}}
           />
           <button type='button' onClick = {() => 
             changeAPIKey(newAPIKey)
@@ -181,13 +187,18 @@ const Page = () => {
           style={{marginBottom: '40px'}}>
           </div>
 
-          <label htmlFor="text-input"><strong>Prompt to use with selected list items</strong></label>
+          <label 
+            htmlFor="text-input"
+            style={{width:'40vw'}}>
+              <strong>Prompt to use with selected list items</strong>
+            </label>
           <input
             type="text"
             id="text-input"
             value={newPrompt}  // The value is controlled by state
             onChange={handleNewPromptRequest}  // Updates state on change
             placeholder="Eg. Suggest dinner recipes given this list of ingredients (and three more ingredients)"
+            style={{width:'40vw'}}
           />
           <button type='button' onClick = {() => 
             updateAIResponse(newPrompt) // generatePrompt(newPrompt, selectedListName)
@@ -206,6 +217,7 @@ const Page = () => {
 
           {AIResponse && ( // Render AIResponse if one is provided. Otherwise, render nothing
             <div style={{
+              width: '40vw',
               marginTop: '20px',  // Adds some space between the form and AI response
               padding: '10px',
               background: '#e0f7f7',  // Different background color for the response box
@@ -214,8 +226,10 @@ const Page = () => {
               wordWrap: 'break-word',  // Ensures the response doesn't overflow horizontally
               maxWidth: '100%',  // Ensures the response box doesn't extend beyond its parent
               minHeight: '50px',  // Provides a minimum height to the response box
+              whiteSpace: 'pre-wrap',
+              overflowWrap: 'break-word',
             }}>
-              {AIResponse}
+               <ReactMarkdown>{AIResponse}</ReactMarkdown>
             </div>
           )}
         </div>
