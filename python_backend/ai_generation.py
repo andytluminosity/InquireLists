@@ -6,15 +6,16 @@ def general_request(listOfItems, userInput):
     client = OpenAI(
         api_key=key
     )
-    instructions = f"You will be provided with a list of items names. Ignored the IDs of each item. Consider each " \
-                   f"item carefully and how they may relate to completing the user-given prompt. " \
-                   f"The order of items in the list may or may not matter based on the user prompt. If the user-given " \
-                   f"prompt is unclear or lacks any details, tell them to restate their prompt but with" \
+    instructions = f"You will be provided with a list of items names with IDs. Ignored the IDs of each item. " \
+                   f"Consider each item carefully and how they may relate to completing the user-given prompt. " \
+                   f"The order of items in the list may or may not matter based on the user prompt. If the " \
+                   f"user-given prompt is unclear or lacks any details, tell them to restate their prompt but with" \
                    f"the clarifications or details necessary. You must tell them to restate and click" \
                    f"the \"Generate\" button again if this is the case."
 
     inputPrompt = f"Here is the aforementioned list of items in the form of an array: {listOfItems}. " \
-                  f"Only use this list and no other mentioned lists. " + userInput
+                  f"Only use this list and no other mentioned lists. Each line must be at most" \
+                  f"110 characters long. Otherwise, continue on a newline with \\n" + userInput
 
     completion = client.chat.completions.create(
       model="gpt-4o-mini",
