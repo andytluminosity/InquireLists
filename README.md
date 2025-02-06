@@ -55,7 +55,7 @@ On other Linux based distros install python3.9 from your package manager.
 
  - [ ] Start the backend server
 	- Simple run the file named `backend_server.py` within the python_backend folder
- - [ ] Visit the [InquireLists website](https://inquire-lists.vercel.app/): https://inquire-lists.vercel.app/
+ - [ ] Visit the InquireLists website: https://inquire-lists.vercel.app/
 
 #### Note: Ensure that the backend server is running before performing any of these actions
  - [ ] Input your OpenAI API Key
