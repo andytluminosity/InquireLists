@@ -15,28 +15,31 @@ messages_list = [{"role":"system", "content": instructions},
                  {"role":"user", "content": "Listen to your"}]
 
 def general_request(listOfItems, userInput):
-    key = get_api_key()
-    client = OpenAI(
-        api_key=key
-    )
+    try:
+        key = get_api_key()
+        client = OpenAI(
+            api_key=key
+        )
 
-    inputPrompt = f"Here is the aforementioned list of items in the form of an array: {listOfItems}. " \
-                  f"Only use this list and no other mentioned lists. Each line must be at most" \
-                  f"110 characters long. Otherwise, continue on a newline with \\n" + userInput
+        inputPrompt = f"Here is the aforementioned list of items in the form of an array: {listOfItems}. " \
+                      f"Only use this list and no other mentioned lists. Each line must be at most" \
+                      f"110 characters long. Otherwise, continue on a newline with \\n" + userInput
 
-    completion = client.chat.completions.create(
-      model="gpt-4o-mini",
-      store=True,
-      messages=[
-        {"role": "system", "content": instructions},
-        {"role": "user", "content": inputPrompt}
-      ],
-        temperature=0.6
-    )
-    result = completion.choices[0].message.content
-    new_message = {"role": "assistant", "content": result}
-    messages_list.append(new_message)
-    return completion.choices[0].message.content
+        completion = client.chat.completions.create(
+          model="gpt-4o-mini",
+          store=True,
+          messages=[
+            {"role": "system", "content": instructions},
+            {"role": "user", "content": inputPrompt}
+          ],
+            temperature=0.6
+        )
+        result = completion.choices[0].message.content
+        new_message = {"role": "assistant", "content": result}
+        messages_list.append(new_message)
+        return completion.choices[0].message.content
+    except:
+        return "Please enter a valid API Key with sufficient credits"
 
 # TO DO: Implement this as a preset
 def cooking_request (listOfItems, excludedIngredients, numOfAdditionalIngredients, userInput):
