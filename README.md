@@ -11,10 +11,6 @@ their created lists
 - Ask and receive answers to inquiries about a certain list and its items
 
 ## Installation
-- [ ] Install npm
-      
-	Follow the instructions in the following doc to install npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-
 - [ ] Install Python 3.9
 	
   On Windows visit `https://www.python.org/downloads/windows/`
@@ -59,12 +55,7 @@ On other Linux based distros install python3.9 from your package manager.
 
  - [ ] Start the backend server
 	- Simple run the file named `backend_server.py` within the python_backend folder
-- [ ] Start the frontend and open the webpage
-  - Open up your command terminal and change directory to the folder containing the source code `cd PATH_TO_INQUIRELISTS`
-    - Eg. `cd C:\Users\YOUR_USERNAME\Downloads\InquireLists`
-  - Run `npm install` if you have not already
-  - Run `npm run dev`
-  - Open [http://localhost:3000](http://localhost:3000) with your browser to see the webpage.
+ - [ ] Visit the [InquireLists website](https://inquire-lists.vercel.app/): https://inquire-lists.vercel.app/
 
 #### Note: Ensure that the backend server is running before performing any of these actions
  - [ ] Input your OpenAI API Key
@@ -94,9 +85,6 @@ On other Linux based distros install python3.9 from your package manager.
 
 ## Known Issues / Troubleshooting
 
-- [ ] Error upon starting the frontend
-	- The first thing the frontend does is load all the user-created lists stored in the backend server
- 	- Ensure that the backend server is running and reload the page
 - [ ] Error when clicking `Generate`
 	- Ensure that the OpenAI API Key you have entered and saved is valid and has sufficient credits for a request
   - Once you have saved a valid OpenAI API Key with sufficient credits, click `Generate` again and the program will generate an answer to your inquiry
