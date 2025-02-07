@@ -1,7 +1,6 @@
 # InquireLists
 
-A web app that allows users to create and edit lists of items, and receive answers, generated using OpenAI API, to inquiries regarding
-their created lists
+A web app that allows users to create and edit lists of items, and receive answers, generated using OpenAI API, to list-related inquiries
 
 ## Features
 
